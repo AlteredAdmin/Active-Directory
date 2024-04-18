@@ -1,3 +1,11 @@
+<#
+
+You can run the script from PowerShell. Ensure that your PowerShell session has the appropriate permissions to query Active Directory and that the AD PowerShell module is installed on the system where you're running the script.
+
+.\GetInactiveComputers.ps1 -ou "OU=Computers,DC=example,DC=com" -daysInactive 90 -adServer "dc01.example.com"
+
+#>
+
 param(
     [string]$ou,           # OU to search in, e.g., "OU=Computers,DC=example,DC=com"
     [int]$daysInactive,    # Number of days to check for inactivity
