@@ -18,9 +18,6 @@ Make sure to run this script in an environment where you have the necessary perm
 
 
 
-
-
-
 # Prompt the user for input
 $input = Read-Host "Please enter a SID or Username"
 
